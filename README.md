@@ -1,17 +1,19 @@
 # routing-controllers-openapi
-[![Build Status](https://travis-ci.org/epiphone/routing-controllers-openapi.svg?branch=master)](https://travis-ci.org/epiphone/routing-controllers-openapi) [![codecov](https://codecov.io/gh/epiphone/routing-controllers-openapi/branch/master/graph/badge.svg)](https://codecov.io/gh/epiphone/routing-controllers-openapi) [![npm version](https://badge.fury.io/js/routing-controllers-openapi.svg)](https://badge.fury.io/js/routing-controllers-openapi)
+[![npm version](https://badge.fury.io/js/%40benjd90%2Frouting-controllers-openapi.svg)](https://www.npmjs.com/package/@benjd90/routing-controllers-openapi)
 
-Runtime OpenAPI v3 schema generation for [routing-controllers](https://github.com/typestack/routing-controllers).
+Runtime OpenAPI v3 schema generation for [@flyacts/routing-controllers](https://github.com/flyacts/routing-controllers).
+
+## Fork from https://github.com/epiphone/routing-controllers-openapi#readme
 
 ## Installation
 
-`yarn add routing-controllers-openapi`
+`yarn add @benjd90/routing-controllers-openapi`
 
 ## Usage
 
 ```typescript
-import { getMetadataArgsStorage } from 'routing-controllers'
-import { routingControllersToSpec } from 'routing-controllers-openapi'
+import { getMetadataArgsStorage } from '@flyacts/routing-controllers'
+import { routingControllersToSpec } from '@benjd90/routing-controllers-openapi'
 
 // Define your controllers as usual:
 
@@ -150,7 +152,7 @@ const spec = routingControllersToSpec(storage, routingControllerOptions, {
 Use the `@OpenAPI` decorator to supply your actions with additional keywords:
 
 ```typescript
-import { OpenAPI } from 'routing-controllers-openapi'
+import { OpenAPI } from '@benjd90/routing-controllers-openapi'
 
 @JsonController('/users')
 export class UsersController {
@@ -209,10 +211,10 @@ export class UsersController {
 
 ### Annotating response schemas
 
-Extracting response types automatically in runtime isn't currently allowed by Typescript's reflection system. Specifically the problem is that `routing-controllers-openapi` can't unwrap generic types like Promise<MyModel> or Array<MyModel>: see e.g. [here](https://github.com/Microsoft/TypeScript/issues/10576) for discussion. As a workaround you can use the `@ResponseSchema` decorator to supply the response body schema:
+Extracting response types automatically in runtime isn't currently allowed by Typescript's reflection system. Specifically the problem is that `@benjd90/routing-controllers-openapi` can't unwrap generic types like Promise<MyModel> or Array<MyModel>: see e.g. [here](https://github.com/Microsoft/TypeScript/issues/10576) for discussion. As a workaround you can use the `@ResponseSchema` decorator to supply the response body schema:
 
 ```typescript
-import { ResponseSchema } from 'routing-controllers-openapi'
+import { ResponseSchema } from '@benjd90/routing-controllers-openapi'
 
 @JsonController('/users')
 export class UsersController {
