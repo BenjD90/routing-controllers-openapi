@@ -8,7 +8,7 @@ import {
   Param,
   QueryParam,
   QueryParams
-} from 'routing-controllers'
+} from '@flyacts/routing-controllers'
 
 import {
   getHeaderParams,

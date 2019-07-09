@@ -17,7 +17,7 @@ import {
   Put,
   QueryParam,
   QueryParams
-} from 'routing-controllers'
+} from '@flyacts/routing-controllers'
 
 import { OpenAPI, ResponseSchema } from '../../src'
 import { ModelDto } from './models'

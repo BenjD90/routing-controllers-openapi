@@ -6,7 +6,7 @@ import {
   getMetadataArgsStorage,
   HttpCode,
   JsonController
-} from 'routing-controllers'
+} from '@flyacts/routing-controllers'
 
 import { getResponses, parseRoutes } from '../src'
 

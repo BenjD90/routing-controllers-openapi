@@ -2,7 +2,7 @@
 import { getFromContainer, MetadataStorage } from 'class-validator'
 import { validationMetadatasToSchemas } from 'class-validator-jsonschema'
 import * as _ from 'lodash'
-import { getMetadataArgsStorage } from 'routing-controllers'
+import { getMetadataArgsStorage } from '@flyacts/routing-controllers'
 
 import {
   expressToOpenAPIPath,

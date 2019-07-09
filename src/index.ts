@@ -3,7 +3,7 @@ import * as oa from 'openapi3-ts'
 import {
   MetadataArgsStorage,
   RoutingControllersOptions
-} from 'routing-controllers'
+} from '@flyacts/routing-controllers'
 
 import { getSpec } from './generateSpec'
 import { parseRoutes } from './parseMetadata'

@@ -7,7 +7,7 @@ import {
   HttpCode,
   JsonController,
   Param
-} from 'routing-controllers'
+} from '@flyacts/routing-controllers'
 
 import {
   getOperation,

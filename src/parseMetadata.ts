@@ -3,11 +3,11 @@ import * as _ from 'lodash'
 import {
   MetadataArgsStorage,
   RoutingControllersOptions
-} from 'routing-controllers'
-import { ActionMetadataArgs } from 'routing-controllers/metadata/args/ActionMetadataArgs'
-import { ControllerMetadataArgs } from 'routing-controllers/metadata/args/ControllerMetadataArgs'
-import { ParamMetadataArgs } from 'routing-controllers/metadata/args/ParamMetadataArgs'
-import { ResponseHandlerMetadataArgs } from 'routing-controllers/metadata/args/ResponseHandleMetadataArgs'
+} from '@flyacts/routing-controllers'
+import { ActionMetadataArgs } from '@flyacts/routing-controllers/dist/metadata/args/ActionMetadataArgs'
+import { ControllerMetadataArgs } from '@flyacts/routing-controllers/dist/metadata/args/ControllerMetadataArgs'
+import { ParamMetadataArgs } from '@flyacts/routing-controllers/dist/metadata/args/ParamMetadataArgs'
+import { ResponseHandlerMetadataArgs } from '@flyacts/routing-controllers/dist/metadata/args/ResponseHandleMetadataArgs'
 
 /**
  * All the context for a single route.
